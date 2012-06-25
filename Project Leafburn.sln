@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project Leafburn", "Project Leafburn\Project Leafburn\Project Leafburn.csproj", "{FC35A4CD-DF9B-4897-951F-CDBECE0F0E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project LeafburnContent", "Project Leafburn\Project LeafburnContent\Project LeafburnContent.contentproj", "{A25537A6-DC36-40B9-B874-9CF2B71E9061}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any cpu = Debug|Any cpu
+		Debug|x86 = Debug|x86
+		Release|Any cpu = Release|Any cpu
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC35A4CD-DF9B-4897-951F-CDBECE0F0E01}.Debug|Any cpu.ActiveCfg = Release|x86
+		{FC35A4CD-DF9B-4897-951F-CDBECE0F0E01}.Debug|Any cpu.Build.0 = Release|x86
+		{FC35A4CD-DF9B-4897-951F-CDBECE0F0E01}.Debug|x86.ActiveCfg = Debug|x86
+		{FC35A4CD-DF9B-4897-951F-CDBECE0F0E01}.Debug|x86.Build.0 = Debug|x86
+		{FC35A4CD-DF9B-4897-951F-CDBECE0F0E01}.Release|Any cpu.ActiveCfg = Release|x86
+		{FC35A4CD-DF9B-4897-951F-CDBECE0F0E01}.Release|Any cpu.Build.0 = Release|x86
+		{FC35A4CD-DF9B-4897-951F-CDBECE0F0E01}.Release|x86.ActiveCfg = Release|x86
+		{FC35A4CD-DF9B-4897-951F-CDBECE0F0E01}.Release|x86.Build.0 = Release|x86
+		{A25537A6-DC36-40B9-B874-9CF2B71E9061}.Debug|Any cpu.ActiveCfg = Debug|x86
+		{A25537A6-DC36-40B9-B874-9CF2B71E9061}.Debug|x86.ActiveCfg = Debug|x86
+		{A25537A6-DC36-40B9-B874-9CF2B71E9061}.Release|Any cpu.ActiveCfg = Release|x86
+		{A25537A6-DC36-40B9-B874-9CF2B71E9061}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

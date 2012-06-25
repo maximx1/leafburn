@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>black_piece.png</Source>
+      <Name>black_piece</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\black_piece.xnb</Output>
+      <Time>2012-03-25T23:05:18-04:00</Time>
+    </Item>
+    <Item>
+      <Source>board.png</Source>
+      <Name>board</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\board.xnb</Output>
+      <Time>2012-03-26T00:47:58-04:00</Time>
+    </Item>
+    <Item>
+      <Source>red_piece.png</Source>
+      <Name>red_piece</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\red_piece.xnb</Output>
+      <Time>2012-03-25T23:03:34-04:00</Time>
+    </Item>
+    <Item>
+      <Source>cursor.png</Source>
+      <Name>cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\cursor.xnb</Output>
+      <Time>2012-03-26T18:56:06-04:00</Time>
+    </Item>
+    <Item>
+      <Source>highlight_select.png</Source>
+      <Name>highlight_select</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_select.xnb</Output>
+      <Time>2012-03-28T20:55:10.2936921-04:00</Time>
+    </Item>
+    <Item>
+      <Source>highlight_move_to.png</Source>
+      <Name>highlight_move_to</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_move_to.xnb</Output>
+      <Time>2012-03-28T20:54:54.7048005-04:00</Time>
+    </Item>
+    <Item>
+      <Source>king_piece.png</Source>
+      <Name>king_piece</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\king_piece.xnb</Output>
+      <Time>2012-03-29T08:47:36-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerNum.spritefont</Source>
+      <Name>PlayerNum</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\PlayerNum.xnb</Output>
+      <Time>2012-04-26T17:23:39.7083676-04:00</Time>
+    </Item>
+    <Item>
+      <Source>otherFont.spritefont</Source>
+      <Name>otherFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\otherFont.xnb</Output>
+      <Time>2012-05-01T16:18:54.1754617-04:00</Time>
+    </Item>
+    <Item>
+      <Source>endgame.spritefont</Source>
+      <Name>endgame</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\endgame.xnb</Output>
+      <Time>2012-05-01T16:15:16.2289958-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project LeafburnContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project LeafburnContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-03-22T21:52:48.7673843-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

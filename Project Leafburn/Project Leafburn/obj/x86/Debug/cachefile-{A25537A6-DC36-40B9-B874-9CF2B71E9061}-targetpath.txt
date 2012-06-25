@@ -1,0 +1,10 @@
+Content\black_piece.xnb
+Content\board.xnb
+Content\red_piece.xnb
+Content\cursor.xnb
+Content\highlight_select.xnb
+Content\highlight_move_to.xnb
+Content\king_piece.xnb
+Content\PlayerNum.xnb
+Content\otherFont.xnb
+Content\endgame.xnb
