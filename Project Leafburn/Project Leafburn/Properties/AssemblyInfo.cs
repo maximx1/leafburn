@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("Project Leafburn")]
 [assembly: AssemblyProduct("Project Leafburn")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright ©  2012")]
+[assembly: AssemblyDescription("Checkers game built on the XNA framework")]
+[assembly: AssemblyCompany("Maximx1 Games")]
+[assembly: AssemblyCopyright("Copyright Maximx1 Games © 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -31,4 +31,4 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.1.1")]

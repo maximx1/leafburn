@@ -12,6 +12,9 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Project_Leafburn
 {
+    /// <summary>
+    /// Base class for the cursor 
+    /// </summary>
     class cursorType
     {
         public float x;
@@ -20,6 +23,9 @@ namespace Project_Leafburn
         public ButtonState leftMouse;
         private ButtonState leftMousePrev;
 
+        /// <summary>
+        /// Constructor for the cursor
+        /// </summary>
         public cursorType()
         {
             x = 0f;
@@ -27,6 +33,9 @@ namespace Project_Leafburn
             leftMouse = ButtonState.Released;
             leftMousePrev = leftMouse;
         }
+        /// <summary>
+        /// Stores the last mouse click to check against
+        /// </summary>
         public void setLeftMousePrev()
         {
             this.leftMousePrev = this.leftMouse;

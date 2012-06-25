@@ -110,12 +110,12 @@
     <Compile Include="CheckerPiece.cs" />
     <Compile Include="cursorType.cs" />
     <Compile Include="InitializeLayout.cs" />
-    <Compile Include="Operations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="LeafBurn1.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChangeLog.txt" />
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
   </ItemGroup>

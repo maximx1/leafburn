@@ -11,44 +11,36 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-//**********************************************//
-//               InitializeLayout.cs            //
-//**********************************************//
-//   This class handles the update and draw     //
-//**********************************************//
-//***
-//                **Things to do**
-//
-// 21. Add show possible moves
-// 22. Add move to possible locations
-
-
-
-
 namespace Project_Leafburn
 {
+    /// <summary>
+    /// Main class of the game. This class draws the game board, pieces and cursor
+    /// </summary>
     public partial class LeafBurn1 : Microsoft.Xna.Framework.Game
     {
         const float gameWindowHeight = 831f;	//Sets the game window height
         const float gameWindowWidth = 1061f;	//Sets the game window width
-        const float scale = 0.8f;		//Adjusts the scale for the display
+        const float scale = 0.8f;		        //Adjusts the scale for the display
         GraphicsDeviceManager graphics;			// This sets up your graphics card to use the code
-        SpriteBatch spriteBatch;			// initializes a spritebatch object which is used to draw the board and pieces
+        SpriteBatch spriteBatch;			    // initializes a spritebatch object which is used to draw the board and pieces
         CheckerPiece[] checkers = new CheckerPiece[24];	// creates an array of checker objects, 1 for each piece
-        Texture2D backGround;				// this initializes the background for the checker board
+        Texture2D backGround;				    // this initializes the background for the checker board
+        TimeSpan player1Time = new TimeSpan();  //Player 1's timer
+        TimeSpan player2Time = new TimeSpan();  //Player 2's timer
         SpriteFont playerNumFont;
         SpriteFont otherFont;
+        SpriteFont playerTimeText;
         SpriteFont endGameFont;
-        cursorType gameCursor=new cursorType();		// this initializes an object keep track of the mouse
-        MouseState updatedMouse;			// registers clicks of the mouse
-        MouseState oldMouse;                // A storage place for the old mouse input
-        //int chosenPiece = 25;
+        cursorType gameCursor=new cursorType();	// this initializes an object keep track of the mouse
+        MouseState updatedMouse;			    // registers clicks of the mouse
+        MouseState oldMouse;                    // A storage place for the old mouse input
         int playerTurn = 1;
         bool gameRun=true;
         string winner;
 
-        // this class draws the game board, pieces and cursor
-
+        /// <summary>
+        /// Constructor:: initializes the graphics device settings
+        /// </summary>
         public LeafBurn1()
         {
             graphics = new GraphicsDeviceManager(this);         // gets info from the graphics card
@@ -57,14 +49,19 @@ namespace Project_Leafburn
             graphics.PreferredBackBufferWidth = (Int32)(gameWindowWidth*scale);
         }
 
-        // this method will make the normal cursor dissapear
+        /// <summary>
+        /// Gamestate initializer
+        /// This method will make the system cursor disappear
+        /// </summary>
         protected override void Initialize()
         {
             this.IsMouseVisible = false;    //Do not display system mouse
             base.Initialize();              //Initialize the gaming subsystem
         }
 
-        //this draws everything
+        /// <summary>
+        /// This loads all the textures for displaying
+        /// </summary>
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);  //get the program ready to draw
@@ -96,20 +93,22 @@ namespace Project_Leafburn
             playerNumFont = Content.Load<SpriteFont>("PlayerNum");
             otherFont = Content.Load<SpriteFont>("otherFont");
             endGameFont = Content.Load<SpriteFont>("endgame");
+            playerTimeText = Content.Load<SpriteFont>("playerTimeText");
         }
 
-        // let garbage collection deal with this
-        protected override void UnloadContent()
-        {
-        }
+        /// <summary>
+        /// Removes all the objects textures, let garbage collection deal with this
+        /// </summary>
+        protected override void UnloadContent() { }
 
-        //will exit the game if escape is clicked
-
+        /// <summary>
+        /// Updates the logic and state of the game.
+        /// </summary>
+        /// <param name="gameTime">Pass in the game time</param>
         protected override void Update(GameTime gameTime)
         {
             KeyboardState updatedKeyboard;      //initialize variable to register keyboard action
             updatedKeyboard = Keyboard.GetState(); //find current state of keyboard
-            
 
             if (updatedKeyboard.IsKeyDown(Keys.Escape)) //check if the escape key is pressed, if it is, close the game
             {
@@ -151,12 +150,20 @@ namespace Project_Leafburn
                 gameRun = false;
             }
 
+            //This adds the time to the players time based on who's turn it is
+            if (playerTurn == 1)
+                player1Time += gameTime.ElapsedGameTime;
+            if (playerTurn == 2)
+                player2Time += gameTime.ElapsedGameTime;
 
             base.Update(gameTime);
         }
 
         //this is the method that actually draws the board and pieces
-
+        /// <summary>
+        /// Draws the object textures to the display.
+        /// </summary>
+        /// <param name="gameTime">Pass in the game time</param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Green); //this is the lowest lvl being drawn, the only visible part is the green menu
@@ -190,9 +197,15 @@ namespace Project_Leafburn
                     }
                 }
 
-                //draws the cursor for the game
+                //Draws the player's turn
                 spriteBatch.DrawString(otherFont, "Player", new Vector2(880f * scale, 2f * scale), Color.Yellow);
                 spriteBatch.DrawString(playerNumFont, playerTurn.ToString(), new Vector2(890f * scale, 5f * scale), Color.Yellow);
+                //Displays Player 1's clock time
+                spriteBatch.DrawString(playerTimeText, "Player 1's time", new Vector2(839f * scale, 280f * scale), Color.Yellow);
+                spriteBatch.DrawString(otherFont, this.player1Time.ToString(@"mm\:ss"), new Vector2(888f * scale, 300f * scale), Color.Yellow);
+                //Displays Player 2's clock time
+                spriteBatch.DrawString(playerTimeText, "Player 2's time", new Vector2(839f * scale, 350f * scale), Color.Yellow);
+                spriteBatch.DrawString(otherFont, this.player2Time.ToString(@"mm\:ss"), new Vector2(888f * scale, 370f * scale), Color.Yellow);
             }
             else
             {
@@ -203,7 +216,10 @@ namespace Project_Leafburn
             spriteBatch.End();  //ends the sequence of drawing
             base.Draw(gameTime); 
         }
-
+       
+        /// <summary>
+        /// Handles the click events and registers the location to check against the checker piece location
+        /// </summary>
         public void onMouseClick()
         {
             if (updatedMouse.LeftButton == ButtonState.Pressed && updatedMouse.LeftButton != oldMouse.LeftButton)
@@ -382,6 +398,10 @@ namespace Project_Leafburn
             }
         }
 
+        /// <summary>
+        /// Determines the next possible locations of the checker pieces.
+        /// </summary>
+        /// <param name="chosen">The index of the checkerpiece to check next moves.</param>
         private void showNextMoves(int chosen)
         {
             int sn1X;

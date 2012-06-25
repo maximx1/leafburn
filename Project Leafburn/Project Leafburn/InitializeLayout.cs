@@ -3,27 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-//**********************************************//
-//               InitializeLayout.cs            //
-//**********************************************//
-//  This class lays out the pieces on the grid  //
-//**********************************************//
-//***
-//                **Things to do**
-//
-// 1. Remove the tests at the end of the coding projects
-// 2. Rename tmpX and tmpY to something more meaningfull
-// 3. Use this Class to teach c# to the others in the group
-// 4. Make sure to comment everything
-
 namespace Project_Leafburn
 {
+    /// <summary>
+    /// This class lays out the pieces on the grid
+    /// </summary>
     static class InitializeLayout
     {
         static private int countId = 0;
         static private int tmpX = 0;
         static private int tmpY = 0;
 
+        /// <summary>
+        /// Initializes the checker pieces to the American Checkers standard
+        /// </summary>
+        /// <param name="checkers">The array of 24 checker pieces</param>
         public static void setPiece(CheckerPiece[] checkers)
         {
             int tmp = 0;

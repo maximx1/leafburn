@@ -10,23 +10,13 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-//**********************************************//
-//               CheckerPiece.cs                //
-//**********************************************//
-//   This class represents the checker pieces   //
-//**********************************************//
-//***
-//                **Things to do**
-//
-// 2. Might need to add some audio or Music properties in this class.
-// 3. Make sure to comment everything
-// 4. Add static pixel count functions for suggested moves
-
 namespace Project_Leafburn
 {
+    /// <summary>
+    /// Base class for the checker pieces
+    /// </summary>
     class CheckerPiece
     {
-       
         public int id=0;
         public int xValue = 0;
         public int yValue = 0;
@@ -48,7 +38,6 @@ namespace Project_Leafburn
         public float sn3YPix = 20f;
         public float sn4XPix = 20f;
         public float sn4YPix = 20f;
-        //public float spin;
         private float xOffset = 20f;
         private float yOffset = 20f;
         public bool showSelect = false;
@@ -67,13 +56,18 @@ namespace Project_Leafburn
         public Texture2D nextMove4;
         public Texture2D king;
 
-        //These 2 functions calculate the pixel coordinate for the checkerpeices.
+        /// <summary>
+        /// Calculates the pixel count of each checker piece
+        /// </summary>
         public void calcPiecePix()
         {
             xLocationPix = ((float)xValue * 100f + xOffset);
             yLocationPix = ((float)yValue * 100f + yOffset);
         }
 
+        /// <summary>
+        /// Calculates the pixel count of the next possible move overlay
+        /// </summary>
         public void calcNextLocationsPix()
         {
             sn1XPix = ((float)sn1X * 100f + xOffset);

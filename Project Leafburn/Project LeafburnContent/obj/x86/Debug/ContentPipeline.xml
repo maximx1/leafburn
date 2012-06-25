@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\black_piece.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\black_piece.xnb</Output>
       <Time>2012-03-25T23:05:18-04:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\board.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\board.xnb</Output>
       <Time>2012-03-26T00:47:58-04:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\red_piece.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\red_piece.xnb</Output>
       <Time>2012-03-25T23:03:34-04:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\cursor.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\cursor.xnb</Output>
       <Time>2012-03-26T18:56:06-04:00</Time>
     </Item>
     <Item>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_select.xnb</Output>
-      <Time>2012-03-28T20:55:10.2936921-04:00</Time>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_select.xnb</Output>
+      <Time>2012-03-28T20:55:12-04:00</Time>
     </Item>
     <Item>
       <Source>highlight_move_to.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_move_to.xnb</Output>
-      <Time>2012-03-28T20:54:54.7048005-04:00</Time>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_move_to.xnb</Output>
+      <Time>2012-03-28T20:54:56-04:00</Time>
     </Item>
     <Item>
       <Source>king_piece.png</Source>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\king_piece.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\king_piece.xnb</Output>
       <Time>2012-03-29T08:47:36-04:00</Time>
     </Item>
     <Item>
@@ -70,8 +70,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\PlayerNum.xnb</Output>
-      <Time>2012-04-26T17:23:39.7083676-04:00</Time>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\PlayerNum.xnb</Output>
+      <Time>2012-04-26T17:23:40-04:00</Time>
     </Item>
     <Item>
       <Source>otherFont.spritefont</Source>
@@ -79,8 +79,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\otherFont.xnb</Output>
-      <Time>2012-05-01T16:18:54.1754617-04:00</Time>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\otherFont.xnb</Output>
+      <Time>2012-05-01T16:18:56-04:00</Time>
     </Item>
     <Item>
       <Source>endgame.spritefont</Source>
@@ -88,8 +88,17 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\endgame.xnb</Output>
-      <Time>2012-05-01T16:15:16.2289958-04:00</Time>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\endgame.xnb</Output>
+      <Time>2012-05-01T16:15:18-04:00</Time>
+    </Item>
+    <Item>
+      <Source>playerTimeText.spritefont</Source>
+      <Name>playerTimeText</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\playerTimeText.xnb</Output>
+      <Time>2012-06-25T15:51:01.8613632-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -97,10 +106,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project LeafburnContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project LeafburnContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project LeafburnContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project LeafburnContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
