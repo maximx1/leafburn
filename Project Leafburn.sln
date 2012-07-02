@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project Leafburn", "Project
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project LeafburnContent", "Project Leafburn\Project LeafburnContent\Project LeafburnContent.contentproj", "{A25537A6-DC36-40B9-B874-9CF2B71E9061}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing Fields", "Testing Fields\Testing Fields.csproj", "{AD81118A-AAFE-409D-9178-1E74F357DE7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any cpu = Debug|Any cpu
@@ -25,6 +27,12 @@ Global
 		{A25537A6-DC36-40B9-B874-9CF2B71E9061}.Debug|x86.ActiveCfg = Debug|x86
 		{A25537A6-DC36-40B9-B874-9CF2B71E9061}.Release|Any cpu.ActiveCfg = Release|x86
 		{A25537A6-DC36-40B9-B874-9CF2B71E9061}.Release|x86.ActiveCfg = Release|x86
+		{AD81118A-AAFE-409D-9178-1E74F357DE7C}.Debug|Any cpu.ActiveCfg = Debug|x86
+		{AD81118A-AAFE-409D-9178-1E74F357DE7C}.Debug|x86.ActiveCfg = Debug|x86
+		{AD81118A-AAFE-409D-9178-1E74F357DE7C}.Debug|x86.Build.0 = Debug|x86
+		{AD81118A-AAFE-409D-9178-1E74F357DE7C}.Release|Any cpu.ActiveCfg = Release|x86
+		{AD81118A-AAFE-409D-9178-1E74F357DE7C}.Release|x86.ActiveCfg = Release|x86
+		{AD81118A-AAFE-409D-9178-1E74F357DE7C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,33 @@
+﻿///////////////////////////////////////////////////
+/// Init push by Justin Walrath(Maximx1)		///
+/// Checkers game								///
+/// You may take the code and edit as you wish	///
+/// Please do not sell but you may distribute	///
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+This game was designed for a team project in school initially and was built to run on the XNA framework.
+I'm continuing on with building this project on my own and accepting help from anyone that wishes to join the project.
+Contact me at walrathjaw@gmail.com if you would like access to the repository as it's on my private server.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+===Change Log===
+
+-v1.1
+Added:
+	*Pause menu textures
+	*Pause feature
+	*Game timer
+	*Developed a scoring system
+	*Implemented scoring system
+Changes:
+	*Reorganized the file structure in the solution for visual studio
+Fixed:
+	*Bug where the game registered moves after the game ends. (Logical not visible)
+
+-v1.0
+Overview: initial commit includes the full playable game source code
+Features:
+	*2 player game on one computer
+	*Can determine next available moves
+	*Single move take
+	*Determines the end of game
+	*Full visual game, textures to Board, Checker Pieces, and cursor

@@ -1,11 +1,11 @@
-Content\black_piece.xnb
-Content\board.xnb
-Content\red_piece.xnb
-Content\cursor.xnb
-Content\highlight_select.xnb
-Content\highlight_move_to.xnb
-Content\king_piece.xnb
-Content\PlayerNum.xnb
-Content\otherFont.xnb
-Content\endgame.xnb
-Content\playerTimeText.xnb
+Content\Game Visuals\black_piece.xnb
+Content\Game Visuals\board.xnb
+Content\Game Visuals\red_piece.xnb
+Content\Game Visuals\cursor.xnb
+Content\Game Visuals\highlight_select.xnb
+Content\Game Visuals\highlight_move_to.xnb
+Content\Game Visuals\king_piece.xnb
+Content\Fonts\PlayerNum.xnb
+Content\Fonts\otherFont.xnb
+Content\Fonts\endgame.xnb
+Content\Fonts\playerTimeText.xnb

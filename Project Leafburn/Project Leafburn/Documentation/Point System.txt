@@ -1,0 +1,13 @@
+﻿Points will be based on time versus the number of pieces captured.
+Have each player earn points and be entered into the scoreboard wether win lose or draw
+Points | Reason
+1      | Per piece captured
+8      | Per Win
+3      | Per Full Game
+3	   | Per king made
+-1     | Per 4 pieces captured
+*      | Time Bonus
+
+Notes:
+*This will be 100 points max. 0 point minimum. Subtract 10 points for every minute from the players time. So you may get more points even if you lose the game.
+Effectively 1 point per 6 seconds.

@@ -1,0 +1,5 @@
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Testing Fields\bin\Debug\Testing Fields.exe
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Testing Fields\bin\Debug\Testing Fields.pdb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Testing Fields\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Testing Fields\obj\x86\Debug\Testing Fields.exe
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Testing Fields\obj\x86\Debug\Testing Fields.pdb

@@ -52,20 +52,20 @@ C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafbu
 C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\obj\x86\Debug\Project Leafburn.pdb
 C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\otherFont.xnb
 C:\Users\Maximx1mobile\Dropbox\Mansfield\cis3300\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\endgame.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\black_piece.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\board.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\red_piece.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\cursor.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_select.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_move_to.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\king_piece.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\PlayerNum.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\otherFont.xnb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\endgame.xnb
 C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Project Leafburn.exe
 C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Project Leafburn.pdb
 C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\obj\x86\Debug\Project Leafburn.exe
 C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\obj\x86\Debug\Project Leafburn.pdb
-C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\playerTimeText.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\black_piece.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\board.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\red_piece.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\cursor.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\highlight_select.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\highlight_move_to.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\king_piece.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Fonts\PlayerNum.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Fonts\otherFont.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Fonts\endgame.xnb
+C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Fonts\playerTimeText.xnb

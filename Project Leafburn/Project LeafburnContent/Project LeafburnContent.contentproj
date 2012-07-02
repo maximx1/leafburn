@@ -42,52 +42,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="black_piece.png">
+    <Compile Include="Game Visuals\black_piece.png">
       <Name>black_piece</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="board.png">
+    <Compile Include="Game Visuals\board.png">
       <Name>board</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="red_piece.png">
+    <Compile Include="Game Visuals\red_piece.png">
       <Name>red_piece</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cursor.png">
+    <Compile Include="Game Visuals\cursor.png">
       <Name>cursor</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="highlight_select.png">
+    <Compile Include="Game Visuals\highlight_select.png">
       <Name>highlight_select</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="highlight_move_to.png">
+    <Compile Include="Game Visuals\highlight_move_to.png">
       <Name>highlight_move_to</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="king_piece.png">
+    <Compile Include="Game Visuals\king_piece.png">
       <Name>king_piece</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PlayerNum.spritefont">
+    <Compile Include="Fonts\PlayerNum.spritefont">
       <Name>PlayerNum</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
@@ -95,21 +95,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="otherFont.spritefont">
+    <Compile Include="Fonts\otherFont.spritefont">
       <Name>otherFont</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="endgame.spritefont">
+    <Compile Include="Fonts\endgame.spritefont">
       <Name>endgame</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="playerTimeText.spritefont">
+    <Compile Include="Fonts\playerTimeText.spritefont">
       <Name>playerTimeText</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>

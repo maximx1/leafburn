@@ -2,102 +2,102 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>black_piece.png</Source>
-      <Name>black_piece</Name>
+      <Source>Game Visuals\black_piece.png</Source>
+      <Name>Game Visuals\black_piece</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\black_piece.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\black_piece.xnb</Output>
       <Time>2012-03-25T23:05:18-04:00</Time>
     </Item>
     <Item>
-      <Source>board.png</Source>
-      <Name>board</Name>
+      <Source>Game Visuals\board.png</Source>
+      <Name>Game Visuals\board</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\board.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\board.xnb</Output>
       <Time>2012-03-26T00:47:58-04:00</Time>
     </Item>
     <Item>
-      <Source>red_piece.png</Source>
-      <Name>red_piece</Name>
+      <Source>Game Visuals\red_piece.png</Source>
+      <Name>Game Visuals\red_piece</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\red_piece.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\red_piece.xnb</Output>
       <Time>2012-03-25T23:03:34-04:00</Time>
     </Item>
     <Item>
-      <Source>cursor.png</Source>
-      <Name>cursor</Name>
+      <Source>Game Visuals\cursor.png</Source>
+      <Name>Game Visuals\cursor</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\cursor.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\cursor.xnb</Output>
       <Time>2012-03-26T18:56:06-04:00</Time>
     </Item>
     <Item>
-      <Source>highlight_select.png</Source>
-      <Name>highlight_select</Name>
+      <Source>Game Visuals\highlight_select.png</Source>
+      <Name>Game Visuals\highlight_select</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_select.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\highlight_select.xnb</Output>
       <Time>2012-03-28T20:55:12-04:00</Time>
     </Item>
     <Item>
-      <Source>highlight_move_to.png</Source>
-      <Name>highlight_move_to</Name>
+      <Source>Game Visuals\highlight_move_to.png</Source>
+      <Name>Game Visuals\highlight_move_to</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\highlight_move_to.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\highlight_move_to.xnb</Output>
       <Time>2012-03-28T20:54:56-04:00</Time>
     </Item>
     <Item>
-      <Source>king_piece.png</Source>
-      <Name>king_piece</Name>
+      <Source>Game Visuals\king_piece.png</Source>
+      <Name>Game Visuals\king_piece</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\king_piece.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Game Visuals\king_piece.xnb</Output>
       <Time>2012-03-29T08:47:36-04:00</Time>
     </Item>
     <Item>
-      <Source>PlayerNum.spritefont</Source>
-      <Name>PlayerNum</Name>
+      <Source>Fonts\PlayerNum.spritefont</Source>
+      <Name>Fonts\PlayerNum</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\PlayerNum.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Fonts\PlayerNum.xnb</Output>
       <Time>2012-04-26T17:23:40-04:00</Time>
     </Item>
     <Item>
-      <Source>otherFont.spritefont</Source>
-      <Name>otherFont</Name>
+      <Source>Fonts\otherFont.spritefont</Source>
+      <Name>Fonts\otherFont</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\otherFont.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Fonts\otherFont.xnb</Output>
       <Time>2012-05-01T16:18:56-04:00</Time>
     </Item>
     <Item>
-      <Source>endgame.spritefont</Source>
-      <Name>endgame</Name>
+      <Source>Fonts\endgame.spritefont</Source>
+      <Name>Fonts\endgame</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\endgame.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Fonts\endgame.xnb</Output>
       <Time>2012-05-01T16:15:18-04:00</Time>
     </Item>
     <Item>
-      <Source>playerTimeText.spritefont</Source>
-      <Name>playerTimeText</Name>
+      <Source>Fonts\playerTimeText.spritefont</Source>
+      <Name>Fonts\playerTimeText</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\playerTimeText.xnb</Output>
+      <Output>C:\Users\Maximx1mobile\Documents\Visual Studio 2010\Projects\Project Leafburn\Project Leafburn\Project Leafburn\bin\x86\Debug\Content\Fonts\playerTimeText.xnb</Output>
       <Time>2012-06-25T15:51:01.8613632-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>

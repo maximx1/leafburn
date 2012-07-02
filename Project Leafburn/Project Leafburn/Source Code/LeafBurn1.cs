@@ -18,34 +18,43 @@ namespace Project_Leafburn
     /// </summary>
     public partial class LeafBurn1 : Microsoft.Xna.Framework.Game
     {
-        const float gameWindowHeight = 831f;	//Sets the game window height
-        const float gameWindowWidth = 1061f;	//Sets the game window width
-        const float scale = 0.8f;		        //Adjusts the scale for the display
-        GraphicsDeviceManager graphics;			// This sets up your graphics card to use the code
-        SpriteBatch spriteBatch;			    // initializes a spritebatch object which is used to draw the board and pieces
-        CheckerPiece[] checkers = new CheckerPiece[24];	// creates an array of checker objects, 1 for each piece
-        Texture2D backGround;				    // this initializes the background for the checker board
-        TimeSpan player1Time = new TimeSpan();  //Player 1's timer
-        TimeSpan player2Time = new TimeSpan();  //Player 2's timer
-        SpriteFont playerNumFont;
-        SpriteFont otherFont;
-        SpriteFont playerTimeText;
-        SpriteFont endGameFont;
-        cursorType gameCursor=new cursorType();	// this initializes an object keep track of the mouse
-        MouseState updatedMouse;			    // registers clicks of the mouse
-        MouseState oldMouse;                    // A storage place for the old mouse input
-        int playerTurn = 1;
-        bool gameRun=true;
-        string winner;
+        const float gameWindowHeight = 831f;	        //Sets the game window height
+        const float gameWindowWidth = 1061f;	        //Sets the game window width
+        const float scale = 0.8f;		                //Adjusts the scale for the display
+        GraphicsDeviceManager graphics;			        //This sets up your graphics card to use the code
+        SpriteBatch spriteBatch;			            //initializes a spritebatch object which is used to draw the board and pieces
+        CheckerPiece[] checkers = new CheckerPiece[24];	//creates an array of checker objects, 1 for each piece
+        Texture2D backGround;				            //this initializes the background for the checker board
+        TimeSpan player1Time = new TimeSpan();          //Player 1's timer
+        TimeSpan player2Time = new TimeSpan();          //Player 2's timer
+        TimeSpan playerTempTime = new TimeSpan();       //Timespan holder for pause game
+        SpriteFont playerNumFont;                       //Font to show which players turn it is
+        SpriteFont labelFont;                           //24 pt font
+        SpriteFont playerTimeFont;                      //Font to show the players time and score
+        SpriteFont endGameFont;                         //Font to show who won the game upon completion
+        cursorType gameCursor=new cursorType();	        //this initializes an object keep track of the mouse
+        MouseState updatedMouse;			            //registers clicks of the mouse
+        MouseState oldMouse;                            //A storage place for the old mouse input
+        int playerTurn = 1;                             //Tells which players turn it is
+        int player1Score = 0;                           //Player 1's final game score
+        int player2Score = 0;                           //Player 2's final game score
+        int player1OldPieceCount = 0;                   //Player 1's Old piece count
+        int player2OldPieceCount = 0;                   //Player 2's Old piece count
+        int player1OldKingCount = 0;                    //Player 1's Old King count
+        int player2OldKingCount = 0;                    //Player 1's Old King count
+        bool gameRun=true;                              //Determines if the game is running or not
+        string winner;                                  //String to display who won
+        string player1Name = "Player 1";                //Default name of player 1
+        string player2Name = "Player 2";                //Default name of player 2
 
         /// <summary>
         /// Constructor:: initializes the graphics device settings
         /// </summary>
         public LeafBurn1()
         {
-            graphics = new GraphicsDeviceManager(this);         // gets info from the graphics card
-            Content.RootDirectory = "Content";                //Points to images
-            graphics.PreferredBackBufferHeight = (Int32)(gameWindowHeight*scale); //set the window size to the scale of game requires an integer class
+            graphics = new GraphicsDeviceManager(this);                             // gets info from the graphics card
+            Content.RootDirectory = "Content";                                      //Points to images
+            graphics.PreferredBackBufferHeight = (Int32)(gameWindowHeight*scale);   //set the window size to the scale of game requires an integer class
             graphics.PreferredBackBufferWidth = (Int32)(gameWindowWidth*scale);
         }
 
@@ -55,8 +64,9 @@ namespace Project_Leafburn
         /// </summary>
         protected override void Initialize()
         {
-            this.IsMouseVisible = false;    //Do not display system mouse
-            base.Initialize();              //Initialize the gaming subsystem
+            this.IsMouseVisible = false;                //Do not display system mouse
+            base.Initialize();                          //Initialize the gaming subsystem
+            scores.initializeHighScoresFile();          //Make sure that there is a high scores file
         }
 
         /// <summary>
@@ -65,7 +75,7 @@ namespace Project_Leafburn
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);  //get the program ready to draw
-            InitializeLayout.setPiece(checkers);    //sets all the x and y coordinates for the pieces
+            InitializeLayout.setPiece(checkers);            //sets all the x and y coordinates for the pieces
            
             // this loop loads all the pieces and possible moves
             for (int i = 0; i < 24; i++)
@@ -73,27 +83,27 @@ namespace Project_Leafburn
                 if (checkers[i].id < 12)  // id less than 12 are black pieces
                 {
                     checkers[i].player = 2; //black is player 2
-                    checkers[i].image = Content.Load<Texture2D>("black_piece");       //these next lines load the pieces and the shape to highlight a move
+                    checkers[i].image = Content.Load<Texture2D>(@"Game Visuals\black_piece");       //these next lines load the pieces and the shape to highlight a move
                 }
                 else
                 {
                     checkers[i].player = 1;
-                    checkers[i].image = Content.Load<Texture2D>("red_piece");
+                    checkers[i].image = Content.Load<Texture2D>(@"Game Visuals\red_piece");
                 }
-                checkers[i].select = Content.Load<Texture2D>("highlight_select");
-                checkers[i].nextMove1 = Content.Load<Texture2D>("highlight_move_to");
-                checkers[i].nextMove2 = Content.Load<Texture2D>("highlight_move_to");
-                checkers[i].nextMove3 = Content.Load<Texture2D>("highlight_move_to");
-                checkers[i].nextMove4 = Content.Load<Texture2D>("highlight_move_to");
-                checkers[i].king = Content.Load<Texture2D>("king_piece");
+                checkers[i].select = Content.Load<Texture2D>(@"Game Visuals\highlight_select");
+                checkers[i].nextMove1 = Content.Load<Texture2D>(@"Game Visuals\highlight_move_to");
+                checkers[i].nextMove2 = Content.Load<Texture2D>(@"Game Visuals\highlight_move_to");
+                checkers[i].nextMove3 = Content.Load<Texture2D>(@"Game Visuals\highlight_move_to");
+                checkers[i].nextMove4 = Content.Load<Texture2D>(@"Game Visuals\highlight_move_to");
+                checkers[i].king = Content.Load<Texture2D>(@"Game Visuals\king_piece");
             }
             //Load background
-            backGround = Content.Load<Texture2D>("board");
-            gameCursor.image = Content.Load<Texture2D>("cursor");
-            playerNumFont = Content.Load<SpriteFont>("PlayerNum");
-            otherFont = Content.Load<SpriteFont>("otherFont");
-            endGameFont = Content.Load<SpriteFont>("endgame");
-            playerTimeText = Content.Load<SpriteFont>("playerTimeText");
+            backGround = Content.Load<Texture2D>(@"Game Visuals\board");
+            gameCursor.image = Content.Load<Texture2D>(@"Game Visuals\cursor");
+            playerNumFont = Content.Load<SpriteFont>(@"Fonts\PlayerNum");
+            labelFont = Content.Load<SpriteFont>(@"Fonts\otherFont");
+            endGameFont = Content.Load<SpriteFont>(@"Fonts\endgame");
+            playerTimeFont = Content.Load<SpriteFont>(@"Fonts\playerTimeText");
         }
 
         /// <summary>
@@ -125,37 +135,73 @@ namespace Project_Leafburn
                 onMouseClick();
             }
 
-            int playerOneCount = 0;
-            int playerTwoCount = 0;
+            playerTempTime = gameTime.ElapsedGameTime;              //keeps polling the game time so that the game can pause
 
-            foreach (CheckerPiece i in checkers)
-            {//Takes the x and y locations and converts them into x and y coordinates(pixels)
-                i.calcPiecePix();
-                i.calcNextLocationsPix();
-                if (i.player == 1 && i.taken)
-                    playerOneCount++;
-                if (i.player == 2 &&i.taken)
-                    playerTwoCount++;
-            }
-
-            if (playerOneCount == 12)
+            if (gameRun)
             {
-                winner = "2";
-                gameRun = false;
+                int playerOneCount = checkers.Where(i => i.player == 1 && i.taken == true).Select(i => i).ToArray().Length;
+                int playerTwoCount = checkers.Where(i => i.player == 2 && i.taken == true).Select(i => i).ToArray().Length;
+                int player1King = checkers.Where(i => i.player == 1 && i.isKing == true).Select(i => i).ToArray().Length;
+                int player2King = checkers.Where(i => i.player == 2 && i.isKing == true).Select(i => i).ToArray().Length;
+
+                foreach (CheckerPiece i in checkers)
+                {//Takes the x and y locations and converts them into x and y coordinates(pixels)
+                    i.calcPiecePix();
+                    i.calcNextLocationsPix();
+                }                
+
+                //Points from Taking a piece
+                if (playerOneCount > player1OldPieceCount)
+                {
+                    player2Score += playerOneCount - player1OldPieceCount;
+                    player1OldPieceCount = playerOneCount;
+                }
+                if (playerTwoCount > player2OldPieceCount)
+                {
+                    player1Score += playerTwoCount - player2OldPieceCount;
+                    player2OldPieceCount = playerTwoCount;
+                }
+
+                //Points from kinging
+                if (player1King > player1OldKingCount)
+                {
+                    player1Score += player1King * 3 - player1OldKingCount;
+                    player1OldKingCount = player1King;
+                }
+                if (player2King > player2OldKingCount)
+                {
+                    player2Score += player2King * 3 - player2OldKingCount;
+                    player2OldKingCount = player2King;
+                }
+                if (playerOneCount == 12)
+                {
+                    winner = "2";
+                    gameRun = false;
+                    player2Score += 8;
+                    player1Score += 3;
+                }
+                if (playerTwoCount == 12)
+                {
+                    winner = "1";
+                    gameRun = false;
+                    player2Score += 3;
+                    player1Score += 8;
+                }
+                if (!gameRun)
+                {
+                    player2Score += 100 - (player2Time.Minutes * 60 + player2Time.Seconds) / 6;
+                    player1Score += 100 - (player1Time.Minutes * 60 + player1Time.Seconds) / 6;
+                    player1Score -= playerOneCount / 4;
+                    player2Score -= playerTwoCount / 4;
+                    scores.recordScores(player1Name, player2Name, player1Score, player2Score);
+                }
+
+                //This adds the time to the players time based on who's turn it is
+                if (playerTurn == 1)
+                    player1Time += playerTempTime;
+                if (playerTurn == 2)
+                    player2Time += playerTempTime;
             }
-
-            if (playerTwoCount == 12)
-            {
-                winner = "1";
-                gameRun = false;
-            }
-
-            //This adds the time to the players time based on who's turn it is
-            if (playerTurn == 1)
-                player1Time += gameTime.ElapsedGameTime;
-            if (playerTurn == 2)
-                player2Time += gameTime.ElapsedGameTime;
-
             base.Update(gameTime);
         }
 
@@ -198,19 +244,21 @@ namespace Project_Leafburn
                 }
 
                 //Draws the player's turn
-                spriteBatch.DrawString(otherFont, "Player", new Vector2(880f * scale, 2f * scale), Color.Yellow);
+                spriteBatch.DrawString(labelFont, "Player", new Vector2(880f * scale, 2f * scale), Color.Yellow);
                 spriteBatch.DrawString(playerNumFont, playerTurn.ToString(), new Vector2(890f * scale, 5f * scale), Color.Yellow);
-                //Displays Player 1's clock time
-                spriteBatch.DrawString(playerTimeText, "Player 1's time", new Vector2(839f * scale, 280f * scale), Color.Yellow);
-                spriteBatch.DrawString(otherFont, this.player1Time.ToString(@"mm\:ss"), new Vector2(888f * scale, 300f * scale), Color.Yellow);
-                //Displays Player 2's clock time
-                spriteBatch.DrawString(playerTimeText, "Player 2's time", new Vector2(839f * scale, 350f * scale), Color.Yellow);
-                spriteBatch.DrawString(otherFont, this.player2Time.ToString(@"mm\:ss"), new Vector2(888f * scale, 370f * scale), Color.Yellow);
             }
             else
             {
                 spriteBatch.DrawString(endGameFont, "Player " + winner + " wins!", new Vector2(50f * scale, 50f * scale), Color.Black);
             }
+            //Displays Player 1's clock time
+            spriteBatch.DrawString(playerTimeFont, "Player 1 stats:", new Vector2(839f * scale, 280f * scale), Color.Yellow);
+            spriteBatch.DrawString(playerTimeFont, "Timer: " + this.player1Time.ToString(@"mm\:ss"), new Vector2(850f * scale, 310f * scale), Color.Yellow);
+            spriteBatch.DrawString(playerTimeFont, "Score: " + this.player1Score.ToString(), new Vector2(850f * scale, 330f * scale), Color.Yellow);
+            //Displays Player 2's clock time
+            spriteBatch.DrawString(playerTimeFont, "Player 2 stats:", new Vector2(839f * scale, 395f * scale), Color.Yellow);
+            spriteBatch.DrawString(playerTimeFont, "Timer: " + this.player2Time.ToString(@"mm\:ss"), new Vector2(850f * scale, 425f * scale), Color.Yellow);
+            spriteBatch.DrawString(playerTimeFont, "Score: " + this.player2Score.ToString(), new Vector2(850f * scale, 445 * scale), Color.Yellow);
             spriteBatch.Draw(gameCursor.image, new Vector2(gameCursor.x, gameCursor.y), null,
                 Color.White, 0f, Vector2.Zero, scale, SpriteEffects.None, 0f);
             spriteBatch.End();  //ends the sequence of drawing
