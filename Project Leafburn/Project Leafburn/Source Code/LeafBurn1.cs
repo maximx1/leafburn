@@ -25,6 +25,8 @@ namespace Project_Leafburn
         SpriteBatch spriteBatch;			            //initializes a spritebatch object which is used to draw the board and pieces
         CheckerPiece[] checkers = new CheckerPiece[24];	//creates an array of checker objects, 1 for each piece
         Texture2D backGround;				            //this initializes the background for the checker board
+        Texture2D p1Label;                             //Image for player 1 piece's left
+        Texture2D p2Label;                             //Image for player 2 piece's left
         TimeSpan player1Time = new TimeSpan();          //Player 1's timer
         TimeSpan player2Time = new TimeSpan();          //Player 2's timer
         TimeSpan playerTempTime = new TimeSpan();       //Timespan holder for pause game
@@ -41,7 +43,9 @@ namespace Project_Leafburn
         int player1OldPieceCount = 0;                   //Player 1's Old piece count
         int player2OldPieceCount = 0;                   //Player 2's Old piece count
         int player1OldKingCount = 0;                    //Player 1's Old King count
-        int player2OldKingCount = 0;                    //Player 1's Old King count
+        int player2OldKingCount = 0;                    //Player 2's Old King count
+        int player1Count = 0;                         //Player 1's taken piece count
+        int player2Count = 0;                         //Player 2's taken piece count
         bool gameRun=true;                              //Determines if the game is running or not
         string winner;                                  //String to display who won
         string player1Name = "Player 1";                //Default name of player 1
@@ -100,6 +104,8 @@ namespace Project_Leafburn
             //Load background
             backGround = Content.Load<Texture2D>(@"Game Visuals\board");
             gameCursor.image = Content.Load<Texture2D>(@"Game Visuals\cursor");
+            p1Label = Content.Load<Texture2D>(@"Game Visuals\red_piece");
+            p2Label = Content.Load<Texture2D>(@"Game Visuals\black_piece");
             playerNumFont = Content.Load<SpriteFont>(@"Fonts\PlayerNum");
             labelFont = Content.Load<SpriteFont>(@"Fonts\otherFont");
             endGameFont = Content.Load<SpriteFont>(@"Fonts\endgame");
@@ -139,8 +145,8 @@ namespace Project_Leafburn
 
             if (gameRun)
             {
-                int playerOneCount = checkers.Where(i => i.player == 1 && i.taken == true).Select(i => i).ToArray().Length;
-                int playerTwoCount = checkers.Where(i => i.player == 2 && i.taken == true).Select(i => i).ToArray().Length;
+                player1Count = checkers.Where(i => i.player == 1 && i.taken == true).Select(i => i).ToArray().Length;
+                player2Count = checkers.Where(i => i.player == 2 && i.taken == true).Select(i => i).ToArray().Length;
                 int player1King = checkers.Where(i => i.player == 1 && i.isKing == true).Select(i => i).ToArray().Length;
                 int player2King = checkers.Where(i => i.player == 2 && i.isKing == true).Select(i => i).ToArray().Length;
 
@@ -151,15 +157,15 @@ namespace Project_Leafburn
                 }                
 
                 //Points from Taking a piece
-                if (playerOneCount > player1OldPieceCount)
+                if (player1Count > player1OldPieceCount)
                 {
-                    player2Score += playerOneCount - player1OldPieceCount;
-                    player1OldPieceCount = playerOneCount;
+                    player2Score += player1Count - player1OldPieceCount;
+                    player1OldPieceCount = player1Count;
                 }
-                if (playerTwoCount > player2OldPieceCount)
+                if (player2Count > player2OldPieceCount)
                 {
-                    player1Score += playerTwoCount - player2OldPieceCount;
-                    player2OldPieceCount = playerTwoCount;
+                    player1Score += player2Count - player2OldPieceCount;
+                    player2OldPieceCount = player2Count;
                 }
 
                 //Points from kinging
@@ -173,14 +179,14 @@ namespace Project_Leafburn
                     player2Score += player2King * 3 - player2OldKingCount;
                     player2OldKingCount = player2King;
                 }
-                if (playerOneCount == 12)
+                if (player1Count == 12)
                 {
                     winner = "2";
                     gameRun = false;
                     player2Score += 8;
                     player1Score += 3;
                 }
-                if (playerTwoCount == 12)
+                if (player2Count == 12)
                 {
                     winner = "1";
                     gameRun = false;
@@ -191,8 +197,8 @@ namespace Project_Leafburn
                 {
                     player2Score += 100 - (player2Time.Minutes * 60 + player2Time.Seconds) / 6;
                     player1Score += 100 - (player1Time.Minutes * 60 + player1Time.Seconds) / 6;
-                    player1Score -= playerOneCount / 4;
-                    player2Score -= playerTwoCount / 4;
+                    player1Score -= player1Count / 4;
+                    player2Score -= player2Count / 4;
                     scores.recordScores(player1Name, player2Name, player1Score, player2Score);
                 }
 
@@ -255,10 +261,14 @@ namespace Project_Leafburn
             spriteBatch.DrawString(playerTimeFont, "Player 1 stats:", new Vector2(839f * scale, 280f * scale), Color.Yellow);
             spriteBatch.DrawString(playerTimeFont, "Timer: " + this.player1Time.ToString(@"mm\:ss"), new Vector2(850f * scale, 310f * scale), Color.Yellow);
             spriteBatch.DrawString(playerTimeFont, "Score: " + this.player1Score.ToString(), new Vector2(850f * scale, 330f * scale), Color.Yellow);
+            spriteBatch.Draw(p1Label, new Vector2(850f * scale, 360 * scale), null, Color.White, 0f, Vector2.Zero, scale * .15f, SpriteEffects.None, 0f);
+            spriteBatch.DrawString(playerTimeFont, " Left: " + (12 - this.player1Count).ToString(), new Vector2(850f * scale, 350f * scale), Color.Yellow);
             //Displays Player 2's clock time
             spriteBatch.DrawString(playerTimeFont, "Player 2 stats:", new Vector2(839f * scale, 395f * scale), Color.Yellow);
             spriteBatch.DrawString(playerTimeFont, "Timer: " + this.player2Time.ToString(@"mm\:ss"), new Vector2(850f * scale, 425f * scale), Color.Yellow);
             spriteBatch.DrawString(playerTimeFont, "Score: " + this.player2Score.ToString(), new Vector2(850f * scale, 445 * scale), Color.Yellow);
+            spriteBatch.Draw(p2Label, new Vector2(850f * scale, 475 * scale), null, Color.White, 0f, Vector2.Zero, scale * .15f, SpriteEffects.None, 0f);
+            spriteBatch.DrawString(playerTimeFont, " Left: " + (12 - this.player2Count).ToString(), new Vector2(850f * scale, 465f * scale), Color.Yellow);
             spriteBatch.Draw(gameCursor.image, new Vector2(gameCursor.x, gameCursor.y), null,
                 Color.White, 0f, Vector2.Zero, scale, SpriteEffects.None, 0f);
             spriteBatch.End();  //ends the sequence of drawing

@@ -18,6 +18,7 @@ Added:
 	*Game timer
 	*Developed a scoring system
 	*Implemented scoring system
+	*Formatted statistics area to include timer, score, and pieces left
 Changes:
 	*Reorganized the file structure in the solution for visual studio
 Fixed:

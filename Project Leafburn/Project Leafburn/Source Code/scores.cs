@@ -98,5 +98,16 @@ namespace Project_Leafburn
             }
             return highscores;
         }
+
+        /// <summary>
+        /// Function to clear all high scores
+        /// </summary>
+        public static void clearHighScores()
+        {
+            List<string> toFile = new List<string>();
+            toFile.Add("Leafburn Scores");
+            toFile.Add("---------------");
+            File.WriteAllLines(@"stats\scores.hs", toFile);
+        }
     }
 }
